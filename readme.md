@@ -1,1 +1,1 @@
-![Demonstração](video_funcionamento.mp4)
+![Demonstração](arvore.png)
