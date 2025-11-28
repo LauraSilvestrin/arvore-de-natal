@@ -87,3 +87,54 @@ body {
     height: 120px;
     background: #3e2f1c;
 }
+
+.bola {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+
+    background: radial-gradient(circle at 30% 30%, #e95757, #ff0000);
+
+}
+
+.bolas-area {
+    position: absolute;
+    top: 0;
+    left: -110px;
+    width: 220px;
+    height: 120px;
+}
+
+.pisca {
+    width: 8px;
+    height: 8px;
+    background: yellow;
+    border-radius: 50%;
+    position: absolute;
+    animation: piscar 1s infinite;
+    box-shadow: 0 0 15px rgba(225, 225, 161, 1.5);
+}
+
+@keyframes piscar {
+ 0% {
+        background-color: rgba(255, 242, 0, 0.1);  
+        box-shadow: 0 0 2px rgba(255, 242, 0, 0.1);
+    }
+    25% {
+        background-color: rgba(255, 230, 0, 0.6);
+        box-shadow: 0 0 8px rgba(255, 230, 0, 0.6);
+    }
+    50% {
+        background-color: rgba(255, 215, 0, 1);  
+        box-shadow: 0 0 15px rgba(255, 215, 0, 1);
+    }
+    75% {
+        background-color: rgba(255, 230, 0, 0.6);
+        box-shadow: 0 0 8px rgba(255, 230, 0, 0.6);
+    }
+    100% {
+        background-color: rgba(255, 242, 0, 0.1);  
+        box-shadow: 0 0 2px rgba(255, 242, 0, 0.1);
+    }
+}
